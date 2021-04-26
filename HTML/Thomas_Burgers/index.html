@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Thomas' Burgers</title>
+
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Informations</h1>
+        <br>
+
+        <h2>What's your name?</h2>
+        <label id="firstname">First Name</label>
+        <input id="firstname" type="text" name="firstname" placeholder="your first name">
+
+        <h2>Select your burger</h2>
+        <label id="beefburger">Beef Burger</label>
+        <input id="beefburger" name="burger" value="beefburger" type="radio">
+        <label id="chickenburger">Chicken Burger</label>
+        <input id="chickenburger" name="burger" value="chickenburger" type="radio">
+
+        <h2>Select your extras</h2>
+        <label id="extras">3 extras maximum</label>
+        
+        <select id="extras" name="extra1">
+            <option value="no"></option>
+            <option value="cheese">Cheese</option>
+            <option value="onion">Onion</option>
+            <option value="bacon">Bacon</option>
+        </select>
+        
+        <select id="extras" name="extra2">
+                <option value="no"></option>
+                <option value="cheese">Cheese</option>
+                <option value="onion">Onion</option>
+                <option value="bacon">Bacon</option>
+        </select>
+
+        <select id="extras" name="extra3">
+            <option value="no"></option>
+            <option value="cheese">Cheese</option>
+            <option value="onion">Onion</option>
+            <option value="bacon">Bacon</option>
+        </select>
+
+        <h2>How many?</h2>
+        <label id="burgerquantity">How many burgers?</label>
+        <input id="burgerquantity" name="burgerquantity" type="number" min="1" max="30" step="1">
+
+        <h2>Your drink</h2>
+        <label id="drink">Select your drink</label>
+        <input id="drink" list="drinks" name="drink">
+            <datalist id="drinks">
+                <option value="coca"></option>
+                <option value="fanta"></option>
+                <option value="icetea"></option>
+            </datalist>
+        
+            <h2>Anything else?</h2>
+            <label id="additionalinfo">Feel free to type below</label>
+            <br>
+            <textarea id="additionalinfo" name="additionalinfo" rows="10" cols="50" placeholder="250 characters maximum"></textarea>
+
+            <h2>Validate your order</h2>
+            <label id="order">Click on <strong>Order! </strong>to validate your command</label>
+            <br>
+            <br>
+            <input id="order" name="order" type="submit" value="Order!">
+
+
+    </form>
+
+
+
+</body>
+
+
+</html>
